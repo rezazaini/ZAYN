@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Web Programming IBIK</title>
+
+		<!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	    <meta name="author" content="Web Programming IBIK">
+	    <meta name="description" content="Landing page">
+
+		
+		<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/main-style.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/offcanvas.css">
+
+		
+		
+		<style type="text/css">
+			/*css internal*/
+			.bg-purple{background-color: blue}
+			.padding-margin{
+				padding-left:50px;
+				padding-right:60px;
+				padding-top:20px; 
+				padding-bottom:80px;
+				padding:20px 60px 80px 50px;
+				padding:20px 50px;
+ 				
+				margin: 80px;
+				margin-top:60px;
+				margin-bottom:10px;
+				margin-left:50px;
+			}
+			#first-component{
+				/*background-image:url('./assets/img/background.jpg');*/
+				background:url('./assets/img/background.jpg') red no-repeat;
+				background-size: cover;
+			}
+			.text-justify{
+				text-align:justify
+			}
+			
+			 .informasi{
+			    width: 100%;
+			    height: 50px;
+			  }
+			  .left{
+			    float: left;
+			    display: block;
+			  }
+			  .right{
+			    float: right;
+			    display: block;
+			  }
+			  #tableimage{
+			  	  font-family: Poppins, Helvetica, Arial, sans-serif;
+			  }
+		</style>
+
+	</head>
+	<body class="bg-light">
+		<header class="navbar navbar-expand-lg navbar-light bg-brown fixed-top" aria-label="Main navigation"> <!-- css inline -->
+		  <div class="container-fluid">
+		    <a class="navbar-brand text-white" href="#">Logo</a>
+		    <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+
+		    <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+		      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+				  <a class="nav-link text-white" href="https://getbootstrap.com/" >Open Link</a> <!-- <a> anchor -->
+			  	</li>			  	
+			  	<li class="nav-item">
+				  <a class="nav-link text-white" href="#table-component">Table</a>
+			  	</li>
+			  	<li class="nav-item">
+				  <a class="nav-link text-white" href="#image-component" >Image</a>
+			  	</li>
+			  	<li class="nav-item">
+				  <a class="nav-link text-white" href="#form-component" >Form</a>
+			  	</li>
+			  	<li class="nav-item">
+				  <a class="nav-link text-white">Component</a>
+			  	</li>
+			</ul>
+		    </div>
+		  </div>
+		</header>		
+		<main>
+			<div id="first-component">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 col-md-6">
+							<div class="fst-layer py-3">
+								<h1>Build fast, responsive sites with Bootstrap</h1>
+								<p class="text-left">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+								
+								<a class="btn btn-primary btn-lg">Get Started</a>
+								<button class="btn btn-outline-success btn-lg">Download</button>
+							</div>							
+						</div>
+						<div class="col-sm-6 col-md-6 text-center pt-5">
+							<img src="./assets/img/pic-1.png" 
+								width="50%" 
+								height="auto"
+								alt="Ini gambar 1"
+								title="PIC 1"
+								/>
+						</div>
+					</div>
+					<br/><br/>
+				</div>
+			</div>
+			
+			
+			<div id="table-component" class="py-5">
+				<div class="container">					
+					<div class="row">
+						<div class="col-6">							
+							<h2 class="display-5 fw-normal">Penggunaan Table</h2>	
+							<p class="lead fw-normal">
+						        Dokumentasi dan contoh untuk gaya keikutsertaan tabel (mengingat penggunaannya yang umum di plugin JavaScript) dengan Bootstrap</a>.
+					      	</p>	
+					      	<p>Pembuatan table pada HTML pada dasarnya diawali dengan taglib <code>&lt;table&gt; ... &lt;/table&gt;</code> dimana didalamnya dibagi menjadi 3 buah bagian yaitu <code>&lt;thead/&gt;</code> <code>&lt;tbody/&gt;</code> dan <code>&lt;tfoot/&gt;</code>. Untuk membuat sebuah baris baru menggunakan <code>&lt;tr/&gt;</code>, sedangkan untuk membuat kolom pada baris menyisipkan <code>&lt;td&gt;</code> ataupun <code>&lt;th/&gt;</code> pada elemen <code>&lt;tr/&gt;</code>.
+					      	</p>
+					      	<a class="btn btn-lg btn-info mb-3" href="https://www.w3schools.com/tags/tag_table.asp" target="_blank" title="Kunjungi halaman">Dok HTML Table</a>
+					      	<a class="btn btn-lg btn-outline-primary mb-3" href="https://getbootstrap.com/docs/5.0/content/tables/" target="_blank" title="Kunjungi halaman">Dok Bootstrap Table</a>
+						</div>
+						<div class="col-6">
+							<div class="card mb-5">
+								<div class="card-body">
+									<h5 class="card-title">Contoh Table HTML & CSS manual</h5>
+									<div class="table-responsive">
+										<table border="1" width="100%" >
+											<thead>
+												<tr class="bg-info">
+													<th width="5%">No</th>
+													<th width="10%">NPM</th>
+													<th>Nama</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>1</td>
+													<td class="bg-danger">123456</td>
+													<td>Udin</td>
+												</tr>
+												
+												<tr>
+													<td>2</td>
+													<td>5665565</td>
+													<td>Asep</td>
+												</tr>
+												
+												<tr>
+													<td>3</td>
+													<td>8888</td>
+													<td>Agus</td>
+												</tr>
+												
+											</tbody>
+											<tfooter>
+												<tr>
+													<td colspan="3" rowspan="1">Note: bla bla</td>
+												</tr>
+											</tfooter>
+										</table>
+									</div>	
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<h5 class="card-title">Contoh Table pada Bootstrap</h5>
+									<div class="table-responsive">
+										<table class="table table-striped table-bordered">
+											<thead>
+												<tr>
+													<th width="5%">No</th>
+													<th width="10%">NPM</th>
+													<th>Nama</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>1</td>
+													<td>123456</td>
+													<td>Udin</td>
+												</tr>
+												
+												<tr>
+													<td>2</td>
+													<td>5665565</td>
+													<td>Asep</td>
+												</tr>
+												
+												<tr>
+													<td>3</td>
+													<td>8888</td>
+													<td>Agus</td>
+												</tr>
+												
+											</tbody>
+											<tfooter>
+												<tr>
+													<td colspan="3" rowspan="1">Note: bla bla</td>
+												</tr>
+											</tfooter>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+
+			<div id="image-component" class="bg-white py-5">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="display-5 fw-normal">Penggunaan Image</h2>	
+							<p class="lead fw-normal">
+								Tag <code>&lt;img&gt;</code> digunakan untuk menyematkan gambar di halaman HTML.
+								Gambar tidak secara teknis dimasukkan ke dalam halaman web; gambar ditautkan ke halaman web. Tag <code>&lt;img&gt;</code> membuat ruang penyimpanan untuk gambar yang direferensikan.
+
+								Tag <code>&lt;img&gt;</code> memiliki dua atribut yang diperlukan:
+							</p>
+							<p class="text-center bg-light py-2">
+								<code class="language-html" data-lang="html">
+									<span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">alt</span><span class="o">=</span><span class="s">"..."</span> </span> <span class="na">width</span><span class="o">=</span><span class="s">"...px"</span> </span> <span class="na">height</span><span class="o">=</span><span class="s">"..."</span> <span class="p">&gt;</span>
+								</code>
+							</p>	
+						</div>
+					</div> 
+
+				</div>
+			</div>
+			
+			<div id="form-component" class="py-5">
+				<div class="container">					
+					<div class="row">
+						<div class="col-12">
+							<img src="./assets/img/lat-table-img.png">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="tableimage">
+				<div class="container">
+					
+					<h2><strong>Latihan Image dan Table</strong></h2>
+					<div class="informasi">
+						<ul class="left">
+							<h5><strong>Family Information</strong></h5>
+						</ul>
+					<ul class="right"><button type="button" class="btn btn-info"><strong>Add New</strong></button></ul>
+				</div>
+				<div class="table-responsive">
+					<table class="table table-striped table-hover">
+						<thead>
+							<tr >
+								<th>NAME</th>
+								<th></th>
+								<th>GENDER</th>
+								<th>BIRTHDATE</th>
+								<th>EDUCATION</th>
+								<th>OCCUPATION</th>
+								<th></th>
+
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><img src="./assets/img/foto1.jpeg" width="70"></td>
+								<td><strong>Reza Zaini Fahmi</strong> <br> Father</td>
+								<td><strong>Male</strong></td>
+								<td><strong>Bogor, Indonesia</strong> <br>11 November 1997</td>
+								<td><strong>S1</strong> <br>Institute of Business and Informatics of Kesatuan</td>
+								<td><strong>Lecturer</strong></td>
+								<td>
+									<div class="btn-group" role="group" aria-label="Basic example">
+  									<button type="button" class="btn btn-success"><STRONG>Edit</STRONG></button>
+ 									<button type="button" class="btn btn-danger"><strong>Delete</strong></button> </div></td>
+							</tr>
+							<tr>
+								<td><img src="./assets/img/foto2.jpeg" width="70"></td>
+								<td><strong>Euis Nurjanah</strong> <br> Mother</td>
+								<td><strong>Female</strong></td>
+								<td><strong>Bogor, Indonesia</strong> <br>20 September 2001</td>
+								<td><strong>S1</strong> <br>Institute of Business and Informatics of Kesatuan</td>
+								<td><strong>Housewife</strong></td>
+								<td>
+									<div class="btn-group" role="group" aria-label="Basic example">
+  									<button type="button" class="btn btn-success"><STRONG>Edit</STRONG></button>
+ 									<button type="button" class="btn btn-danger"><strong>Delete</strong></button> </div></td>
+							</tr>
+							<tr>
+								<td><img src="./assets/img/family3.png" width="50"></td>
+								<td><strong>Zayn Zaini Leonardo</strong> <br> Children</td>
+								<td><strong>Male</strong></td>
+								<td><strong>Bogor, Indonesia</strong> <br>4 April 2013</td>
+								<td><strong>Primary School</strong> <br></td>
+								<td><strong>Student</strong></td>
+								<td>
+									<div class="btn-group" role="group" aria-label="Basic example">
+  									<button type="button" class="btn btn-success"><STRONG>Edit</STRONG></button>
+ 									<button type="button" class="btn btn-danger"><strong>Delete</strong></button> </div></td>
+							</tr>
+							<tr>
+								<td><img src="./assets/img/family3.png" width="50"></td>
+								<td><strong>Zafran Zaini Januar</strong> <br> Children</td>
+								<td><strong>Male</strong></td>
+								<td><strong>Bogor, Indonesia</strong> <br>26 December 2015</td>
+								<td><strong>Primary School</strong> <br></td>
+								<td><strong>Student</strong></td>
+								<td>
+									<div class="btn-group" role="group" aria-label="Basic example">
+  									<button type="button" class="btn btn-success"><STRONG>Edit</STRONG></button>
+ 									<button type="button" class="btn btn-danger"><strong>Delete</strong></button> </div></td>
+							</tr>
+							<tr>
+								<td><img src="./assets/img/family4.png" width="50"></td>
+								<td><strong>Alissa Zaini Al-Jannah</strong> <br> Children</td>
+								<td><strong>Female</strong></td>
+								<td><strong>Bogor, Indonesia</strong> <br>22 March 2017</td>
+								<td><strong>Kindergarten</strong> <br></td>
+								<td><strong>Student</strong></td>
+								<td>
+									<div class="btn-group" role="group" aria-label="Basic example">
+  									<button type="button" class="btn btn-success"><STRONG>Edit</STRONG></button>
+ 									<button type="button" class="btn btn-danger"><strong>Delete</strong></button> </div></td>
+							</tr>
+						</tbody>
+						</table>`
+				</div>
+			</div>
+			</div>
+
+		</main>
+		<footer>footer</footer>
+
+		<script type="text/javascript" src="./assets/js/jquery-3.5.1.slim.min.js"></script>
+		<script type="text/javascript" src="./assets/js/bootstrap.js" ></script>
+		<script type="text/javascript" ="./assets/js/offcanvas.js"></script>
+	</body>
+</html>
